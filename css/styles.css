@@ -852,7 +852,10 @@ margin-bottom: 12px;
     top: 50%;
     transform: translateY(-50%);
 }
-.modal-label .modal-label textarea {
+.input-icon {
+    margin-top: 4px;
+}
+.modal-label textarea {
     margin-top: 4px;
 }
 .form-link {
