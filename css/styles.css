@@ -567,7 +567,7 @@ transition: var(--active);
     letter-spacing: 0.06em;
     padding: 10px 26px;
     border-radius: 4px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-style: none;
     margin-left: 0;
     margin-right: auto;
     margin-top: 0;
@@ -750,9 +750,14 @@ margin-top: 0;
     width: 30px;
     top: 8px;
     right: 8px;
+    background-color: var(--background-color);
     border-radius: 50%;
     border-color: rgba(0, 0, 0, 0.1);
     border-width: 1px;
+}
+.data-modal-close .btn:hover,
+.data-modal-close .btn:focus {
+    fill: var(--accent-color);
 }
 .btn {
 display: flex;
@@ -761,6 +766,7 @@ justify-content: center;
 position: absolute;
 top: 8px;
 right: 8px;
+transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-title {
 font-weight: 700;
@@ -846,28 +852,12 @@ margin-bottom: 12px;
     top: 50%;
     transform: translateY(-50%);
 }
-
-/*.terms.policy {
-    margin-top: 20px;
-    margin-bottom: 30px;
-    display: flex;
-    font-size: 14px;
-    line-height: 1.7;
-    letter-spacing: 0.3;
+.modal-label .modal-label textarea {
+    margin-top: 4px;
 }
-.terms.policy .policy {
-    margin: 0;
+.form-link {
+    margin-left: 4px;
 }
-.policy {
-    font-size: 14px;
-    display: flex;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}*/
-
 .policy {
     font-size: 14px;
     display: flex;
@@ -882,6 +872,8 @@ margin-bottom: 12px;
 }
 .policy-check-text {
     display: flex;
+    font-size: 14px;
+    line-height: 1.7;
 }
 
 .policy-check-text span {
@@ -899,33 +891,11 @@ margin-bottom: 12px;
     background-color: var(--accent-color);
     border: none;
 }
-
-/*.policy-check-text::before {
-    content: "";
-    width: 16px;
-    height: 15px;
-    display: flex;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 1px;
-    border: 1px solid var(--title-text-color);
-    fill: var(--background-color);
+.modal-label {
+    font-size: 12px;
+    line-height: 1.17;
 }
 
-.policy-check:checked + .policy-check-text::before {
-    background-image: url(../images/icon-check\ -1.svg);
-    border: none;
-    width: 16px;
-    height: 15px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-content: center;
-}
-
-.policy-check:checked + .policy svg {
-    fill: var(--background-color);
-}*/
 
 .submit-btn {
     background-color: #188ce8;
@@ -941,7 +911,7 @@ margin-bottom: 12px;
     letter-spacing: 0.06em;
     padding: 10px 55px;
     border-radius: 4px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-style: none;
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
